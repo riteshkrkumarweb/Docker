@@ -173,6 +173,7 @@ docker build -t image_name .
 ```bash id="0u5a1q"
 docker build -t insurance-api .
 ```
+we also put the (.) after the name of the file beacuse we say that use the current directory to built the image of the container 
 
 Explanation:
 

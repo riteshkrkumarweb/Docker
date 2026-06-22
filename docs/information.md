@@ -10,7 +10,7 @@ Then Docker maps that port to your host (-p 8000:8000), so you can reach it via 
 
 A binding server simply means the server process is telling the operating system which network interface and port it should listen on for incoming requests.
 Think of it like this:
-Binding = reserving a door 🚪
+Binding = reserving a door 
 The server says: “I’ll sit at this door (IP + port) and wait for knocks (requests).”
 IP address part → decides which door on the house (machine) it listens at.
 * 127.0.0.1 or localhost → only knocks from inside the house (local machine).
