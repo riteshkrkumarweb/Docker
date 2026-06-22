@@ -2,6 +2,7 @@
 
 After running this command "docker run -p 8000:8000 insurance-api" you will go to the 0.0.0.0:8000 and the site shows that site cannot reached beacuse it is set in the dockerfile that it is run on this ip and port and why it is set beacuse 0.0.0.0 reacieve all the client request outside the local machine when u hosting it on the some servers, to see your api on the localhost replace the ip address 0.0.0.0 with the localhost:8000 . 
 
+ **0.0.0.0:8000 means the sever binds to the port 8000**
 
 The server binds to 0.0.0.0:8000.
 That means: “I’ll listen on all interfaces at port 8000.”
