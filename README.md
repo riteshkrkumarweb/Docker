@@ -14,11 +14,6 @@ This repository documents my hands-on journey with **Docker** — from the basic
 - Learn how to streamline development workflows using Docker.
 - Build confidence in deploying applications across different environments.
 
-## 🌐 Next Steps
-- Explore Docker Compose for multi-container applications.
-- Experiment with container orchestration tools like Kubernetes.
-- Apply Docker in real-world projects.
 
----
 
 💡 *This repo is a personal learning space — expect experiments, notes, and examples as I progress.*
