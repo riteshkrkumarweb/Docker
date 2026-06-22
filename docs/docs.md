@@ -120,19 +120,24 @@ Dockerfile tells Docker how to build the image.
 Example:
 
 ```dockerfile id="pf8hy5"
-FROM python:3.11-slim
+FROM python:3.11-slim        # Use a lightweight Python 3.11 base image
 
-WORKDIR /app
+WORKDIR /app                 # Set the working directory inside the container to /app
 
-COPY requirements.txt .
+COPY requirements.txt .      # Copy requirements.txt into the container
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt   # Install dependencies without caching
 
-COPY . .
+COPY . .                     # Copy all project files into the container
 
-EXPOSE 8000
+EXPOSE 8000                  # Expose port 8000 for external access
 
-CMD ["uvicorn","app:app","--host","0.0.0.0","--port","8000"]
+CMD ["uvicorn","main:app","--host","0.0.0.0","--port","8000"]  
+# Run the app with Uvicorn, listening on all interfaces at port 8000
+# --host 0.0.0.0 → listen on all interfaces (inside container + mapped host ports)
+# This makes the app accessible from your computer/browser via localhost:8000
+# If you used 127.0.0.1, it would only be reachable inside the container itself
+
 ```
 
 ---
